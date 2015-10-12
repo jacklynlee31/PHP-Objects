@@ -1,28 +1,31 @@
 <?php
-interface CatInterface {
-    public function fur();
+
+interface CatInterface
+{
+    public function eat($food);
 }
 
 class Siamese implements CatInterface
 {
-    public function fur()
+    public function eat($food)
     {
-        echo "Siamese cats have soft fur.\n";
+        echo "The siamese cat eats a mouse.\n";
     }
 }
+
 class Persian implements CatInterface
 {
-    public function fur()
+    public function eat($food)
     {
-        echo "Persian cats have long, fuzzy fur.\n";
+        echo "The persian cat eats a bird.\n";
     }
 }
 
 class Owner
 {
-    public function pet(CatInterface $cat)
+    public function care(CatInterface $cat)
     {
-        $cat->fur();
+        $cat->eat($food);
     }
 }
 
@@ -31,6 +34,5 @@ $persian = new Persian;
 
 $owner = new Owner;
 
-$owner->fur($siamese);
-$owner->fur($persian);
-
+$owner->care($siamese);
+$owner->care($persian);
