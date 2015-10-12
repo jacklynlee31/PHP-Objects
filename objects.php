@@ -4,8 +4,6 @@ interface CatInterface {
     public function setName($name);
 }
 
-<?php
-
 class Siamese extends Animal implements CatInterface
 {
     public function fur()
@@ -28,3 +26,12 @@ class Owner
         $cat->fur();
     }
 }
+
+$Siamese = new Siamese;
+$Persian = new Persian;
+
+$owner = new Jacklyn;
+
+$owner->fur($Siamese);
+$owner->fur($Persian);
+
