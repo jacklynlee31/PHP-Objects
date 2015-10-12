@@ -1,10 +1,14 @@
 <?php
 
+// Created a 'Cat' interface.
+// Created an 'eat' method.
 interface CatInterface
 {
     public function eat($food);
 }
 
+// Using 'implements' to show that the class must implement
+// the 'eat' method in the interface.
 class Siamese implements CatInterface
 {
     public function eat($food)
