@@ -1,17 +1,16 @@
 <?php
 interface CatInterface {
-    public function getName();
-    public function setName($name);
+    public function fur();
 }
 
-class Siamese extends Animal implements CatInterface
+class Siamese implements CatInterface
 {
     public function fur()
     {
         echo "Siamese cats have soft fur.\n";
     }
 }
-class Persian extends Animal implements CatInterface
+class Persian implements CatInterface
 {
     public function fur()
     {
@@ -27,11 +26,11 @@ class Owner
     }
 }
 
-$Siamese = new Siamese;
-$Persian = new Persian;
+$siamese = new Siamese;
+$persian = new Persian;
 
-$owner = new Jacklyn;
+$owner = new Owner;
 
-$owner->fur($Siamese);
-$owner->fur($Persian);
+$owner->fur($siamese);
+$owner->fur($persian);
 
