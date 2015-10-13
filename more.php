@@ -41,6 +41,10 @@ $illustrator = new Illustrator;
 $photoshop = new Photoshop;
 $indesign = new InDesign;
 
+echo getExtension($illustrator);
+echo getExtension($photoshop);
+echo getExtension($indesign);
+
 $designer = new Designer;
 
 $designer->design($illustrator);
