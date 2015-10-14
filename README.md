@@ -3,6 +3,9 @@ Produce a working example of PHP object(s), including a demonstration of polymor
 
 <h3>What is polymorphism?</h3>
 * Programming that is object-oriented.
+    - Abstract: defines the interface that other subclasses must have
+    - Encapsulation: storing data within another object
+    - Inheritance: inherit properties from the parent class
 * Classes have different functionality but use the same interface.
   * Brings together different classes under one interface.
 
@@ -15,4 +18,7 @@ Produce a working example of PHP object(s), including a demonstration of polymor
 * Used basic 'echo' to show that the code works thoroughly.
 
 <h4>more.php</h4>
-* Felt that the first file was too basic, so I wanted to dive deeper and build a more complicated example.
+* I wanted to create another example of polymorphism.
+* Created an 'Adobe' Interface.
+* Created 'Illustrator,' 'Photoshop' and 'InDesign' classes.
+* Created a 'Designer' class.

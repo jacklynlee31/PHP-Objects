@@ -3,6 +3,7 @@
 interface AdobeInterface
 {
     public function design($project);
+    public function getExtension();
 }
 
 class Illustrator implements AdobeInterface
@@ -10,6 +11,9 @@ class Illustrator implements AdobeInterface
     public function design($project)
     {
         echo "An Adobe Illustrator file is designed.\n";
+    }
+    public function getExtension($illustrator) {
+        return '.ai';
     }
 }
 
@@ -19,6 +23,9 @@ class Photoshop implements AdobeInterface
     {
         echo "An Adobe Photoshop file is designed.\n";
     }
+    public function getExtension($photoshop) {
+        return '.psd';
+    }
 }
 
 class InDesign implements AdobeInterface
@@ -26,6 +33,9 @@ class InDesign implements AdobeInterface
     public function design($project)
     {
         echo "An Adobe InDesign file is designed.\n";
+    }
+    public function getExtension($indesign) {
+        return '.indd';
     }
 }
 
